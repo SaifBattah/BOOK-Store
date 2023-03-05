@@ -1,0 +1,158 @@
+﻿body {
+    background-image: url('images/book-club-background.jpg');
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+    color: #fff;
+}
+
+.regbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    height: 800px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background-color: rgba(20, 31, 56,0.91);
+    color: white;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgb(44, 100, 116);
+}
+
+.fname, .lname, .uname, .phonenumber, .gender, .pw, .repw {
+    width: 30%;
+    margin-bottom: 80px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.phonenumber {
+    margin-bottom: 40px;
+}
+
+.pw, .repw {
+    position: absolute;
+}
+
+.gender {
+    margin-top: 40px;
+    margin-bottom: 0;
+    width: 30.5%;
+}
+
+#DropDownList1 {
+    background-color: transparent;
+    color: white;
+}
+
+    #DropDownList1 option {
+        background-color: rgb(20, 31, 56);
+        color: white;
+    }
+
+.pw {
+    top: 56.1%;
+    right: 8%;
+    width: 27.5%;
+}
+
+.repw {
+    top: 71.1%;
+    right: 8%;
+    width: 27.5%;
+}
+
+.btnreg {
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(31, 81, 104);
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+    .btnreg:hover {
+        background-color: rgb(152, 230, 209);
+        color: rgb(31, 81, 104);
+        transition: background-color 0.2s, color 0.2s;
+    }
+
+.sucmsg {
+    font-size: 16px;
+    color: red;
+    margin-left: 300px;
+}
+
+.chkbox {
+    position: absolute;
+    top: 13.5%;
+    right: 15.8%;
+    background-color: transparent;
+}
+
+.lblfavorbooks {
+    position: absolute;
+    top: 11%;
+    right: 14.8%;
+    font-size: 18px;
+    color: rgb(118, 118, 118)
+}
+
+.CheckBoxList {
+    display: block;
+    margin: 0.1em;
+}
+
+
+[type="checkbox"] + label {
+    display: block;
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+}
+
+[type="checkbox"] {
+    display: none;
+}
+
+[type=checkbox] + label:before {
+    content: "\2714";
+    border: 0.1em solid #000;
+    display: inline-block;
+    width: 1em;
+    height: .8em;
+    padding-left: 0.2em;
+    padding-bottom: 0.4em;
+    margin-right: 0.4em;
+    vertical-align: bottom;
+    color: transparent;
+    border-color: rgb(152, 230, 209);
+    border-radius: 3px;
+}
+
+[type=checkbox]:checked + label:before {
+    background-color: rgb(31, 81, 104);
+    border-color: transparent;
+    color: rgb(112, 239, 68);
+    transition: .5s;
+}
+
+label {
+    font-weight: bold;
+}

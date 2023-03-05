@@ -1,0 +1,90 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('images/tom-hermans-9boqxzeeqqm-unsplash.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+    color: #fff;
+}
+
+.loginbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 420px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background-color: rgba(20, 31, 56,.95);
+    color: white;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgb(31, 81, 104);
+    cursor: pointer;
+}
+
+.lblpassword, .lblusername, .lblnewmember {
+    font-weight: bold;
+    color: rgb(50, 224, 0);
+}
+
+.usernametext, .passwordtext, .btnlogin {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.usernametext, .passwordtext {
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.btnlogin {
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(31, 81, 104);
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+    .btnlogin:hover {
+        background-color: rgb(50, 224, 0);
+        color: rgb(31, 81, 104);
+        transition: background-color 0.2s, color 0.2s;
+    }
+
+.btnregister {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    height: 36px;
+    width: 92px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+    .btnregister:hover {
+        color: rgb(165, 206, 225);
+        transition: background-color 0.2s, color 0.2s;
+    }
+
+
+.wronginfo {
+    font-size: 12px;
+    color: red;
+}
